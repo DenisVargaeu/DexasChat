@@ -1,0 +1,114 @@
+:root {
+  --bg-color: #1e1f22;
+  --accent: #00bfa6;
+  --text: #ffffff;
+  --bubble-color: #2f3136;
+  --username-color: #00e5ff;
+  --input-bg: #40444b;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: 'Segoe UI', sans-serif;
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.chat-wrapper {
+  width: 420px;
+  background-color: #2b2d31;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #3e4147;
+}
+
+.chat-header {
+  background: linear-gradient(90deg, var(--accent), #1de9b6);
+  padding: 16px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+#username {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  width: calc(100% - 20px);
+  background-color: var(--input-bg);
+  color: var(--text);
+  font-size: 14px;
+}
+
+.chat-box {
+  flex-grow: 1;
+  background-color: var(--bg-color);
+  padding: 15px;
+  overflow-y: auto;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chat-message {
+  background-color: var(--bubble-color);
+  border-radius: 10px;
+  padding: 12px 15px;
+  font-size: 14px;
+  
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.chat-message b {
+  color: var(--username-color);
+}
+
+.message-row {
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+  border-top: 1px solid #383a40;
+  background-color: #2b2d31;
+}
+
+#message-input {
+  flex-grow: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--input-bg);
+  color: var(--text);
+  font-size: 14px;
+}
+
+button {
+  background-color: var(--accent);
+  color: black;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #1de9b6;
+}
