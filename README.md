@@ -23,6 +23,7 @@
 ├── script.js        # Klientská logika - načítanie, odoslanie správ
 ├── write.php        # Ukladanie správ
 ├── read.php         # Načítanie správ zo servera
+├── README.md        # README subor
 └── chat.txt         # Súbor, kde sa ukladajú správy
 ```
 
