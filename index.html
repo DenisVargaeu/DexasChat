@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <title>WebChat </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chat-wrapper">
+    <div class="chat-header">💬 WebChat</div>
+
+   <input type="text" id="username" placeholder="Tvoje meno" style="width: 70%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 10px;
+  width: 122px;">
+
+    <div id="chat-box" class="chat-box"></div>
+
+    <div class="message-row">
+      <input type="text" id="message-input" placeholder="Napíš správu...">
+      <button onclick="sendMessage()">📨</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
