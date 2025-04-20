@@ -33,7 +33,7 @@
 
 1. Stiahni alebo naklonuj projekt:
 ```bash
-git clone https://github.com/tvojeMeno/dexaschat.git
+git clone https://github.com/DenisVargaeu/webchat.git
 ```
 
 2. Nahraj projekt na svoj webhosting **alebo** spusti lokálne cez [XAMPP](https://www.apachefriends.org/index.html).
