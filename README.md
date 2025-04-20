@@ -66,4 +66,4 @@ git clone https://github.com/DenisVargaeu/webchat.git
 
 ## 🧠 Autor
 
-Vyrobené s 💚 Denisom (11 ročný programátor)
+Vyrobené s 💚 Denisom 
