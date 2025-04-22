@@ -1,64 +1,44 @@
 name: Bug Report
-description: File a bug report.
-title: "[Bug]: "
-labels: ["bug", "triage"]
-projects: ["octo-org/1", "octo-org/44"]
-assignees:
-  - octocat
+description: Nahlásiť chybu alebo problém
+title: "[BUG]: "
+labels: [bug]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Ďakujeme, že si chceš nahlásiť chybu! Vyplň prosím všetky potrebné info nižšie 👇
+
   - type: input
-    id: contact
+    id: environment
     attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
+      label: Prostredie
+      description: Napr. verzia prehliadača, operačný systém...
+      placeholder: "Chrome 122 / Windows 11"
     validations:
-      required: false
+      required: true
+
   - type: textarea
     id: what-happened
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: Čo sa stalo?
+      description: Popíš problém čo najpresnejšie.
+      placeholder: "Po kliknutí na tlačidlo sa nič nestane..."
     validations:
       required: true
-  - type: dropdown
-    id: version
-    attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-      default: 0
-    validations:
-      required: true
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
+
   - type: textarea
-    id: logs
+    id: expected
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
-  - type: checkboxes
-    id: terms
+      label: Očakávané správanie
+      description: Čo by sa malo stať?
+      placeholder: "Po kliknutí by sa malo zobraziť okno..."
+
+  - type: textarea
+    id: steps
     attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com). 
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
+      label: Kroky na zopakovanie
+      description: Ako sa dá chyba zopakovať?
+      placeholder: |
+        1. Otvor stránku  
+        2. Klikni na tlačidlo  
+        3. ...
